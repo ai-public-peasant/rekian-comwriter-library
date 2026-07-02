@@ -15,6 +15,24 @@ status: "ACTIVE"
 - "HWPX 서식 분석해줘" / "행정문서 자동 생성"
 - HWP 서식의 **정밀 재현**이 필요한 모든 요청
 
+## Rekian 연계 — 프로필 수신 계약
+
+`hwpx-rekian`은 읽기·분석·보존판단 담당이고, **실제 문서 생성(쓰기)의 기본 백엔드는 이 스킬이다.**
+rekian은 순수 XML 쓰기 능력이 제한적이므로, 재기안 작업의 최종 산출물 생성은 원칙적으로 여기서 수행한다.
+
+rekian 또는 `rekian-library`가 format id를 넘겨주면 반드시 이 순서로 로드한다:
+
+1. `rekian-library/formats/<format-id>/format.json` — 자산 메타데이터, 워크플로우 모드
+2. `rekian-library/formats/<format-id>/format_profile.json` — 구조, 슬롯 감지, zone map, 텍스트 노드 수
+3. `rekian-library/formats/<format-id>/placeholder_schema.json` — 채워야 할 의미 슬롯 계약
+
+수신 측 규칙:
+
+- 캐시된 프로필이 있으면 원본 레퍼런스를 다시 열지 않고 프로필을 실행 계획으로 삼는다.
+- 프로필에 필요한 슬롯이 없거나 시각 검증이 실패할 때만 rekian에 원본 재분석을 요청한다.
+- `placeholder_schema.json`의 키를 기준으로 사용자 입력값을 매핑한 뒤 COM 생성에 들어간다.
+- 생성 → XML 후처리(`xml_postprocess.py`) → 한컴에서 열어 시각 검증까지가 이 스킬의 책임 범위다.
+
 ## 환경 필수조건
 
 ```

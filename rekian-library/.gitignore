@@ -3,4 +3,5 @@ __pycache__/
 outputs/*.hwpx
 outputs/*/
 formats/**/reference.hwpx
-formats/**/unpacked/Preview/PrvImage.png
+# unpacked/ is the user's own unzipped reference document — always keep it local
+formats/**/unpacked/

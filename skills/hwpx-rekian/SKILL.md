@@ -54,6 +54,8 @@ Do not use this skill for generic `.hwpx` inspection or one-off document generat
 
 ## COM Backend
 
+**기본 원칙: `hwpx-rekian`은 읽기·분석·보존 판단 담당이다. 쓰기 능력은 제한적인 순수 XML 조작뿐이므로, 실제 최종 문서 생성은 `hwp-com-writer`가 기본 백엔드다.** 순수 XML 쓰기(`build_hwpx.py` 등)는 구조가 단순하고 시각 검증 부담이 낮은 경우에만 직접 수행한다.
+
 `hwpx-rekian` decides what must be preserved. It should not duplicate the detailed Hancom COM rules.
 
 When a redrafting task needs HWP legacy conversion, Hancom-rendered fidelity, COM-only insertion/replacement, SaveAs-based HWPX generation, or XML postprocessing after COM output, use `hwp-com-writer` as the execution backend.

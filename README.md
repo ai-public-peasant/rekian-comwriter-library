@@ -11,6 +11,18 @@ This repository bundles three parts that are meant to work together:
 
 The core idea is simple: Rekian reads and classifies a reference document once, stores a sanitized structure/profile in the library, and COM-writer uses that profile as an execution plan when precise Hancom-rendered output matters.
 
+The division of labor is strict: **Rekian is the reader, COM-writer is the writer.** `hwpx-rekian` analyzes the reference, decides what to preserve, and caches the structure. It has only minimal pure-XML writing ability, so actual document generation is handed to `hwp-com-writer` by default.
+
+## Bring Your Own Reference
+
+This repository ships **no original reference documents** — only sanitized structure profiles. That means the sample assets cannot be composed into a `.hwpx` as-is. The intended use is:
+
+1. You supply your own reference `.hwpx` (a document whose format you want to reuse).
+2. Rekian extracts and caches its structure profile into `rekian-library`.
+3. You author a content asset, then compose or COM-generate a new document from the profile.
+
+See [rekian-library/README.md](rekian-library/README.md) for the step-by-step workflow with your own document.
+
 ## Repository Layout
 
 ```text

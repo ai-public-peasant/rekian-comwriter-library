@@ -22,6 +22,10 @@ instructions: |
   - scripts/xml_postprocess.py: XML 후처리 (배경색, indent, 표, 자간)
   - scripts/template_filler.py: HWPX 템플릿 빈칸 채우기
 
+  Rekian 연계: hwpx-rekian은 읽기/분석 담당이고 실제 쓰기의 기본 백엔드는 이 스킬입니다.
+  format id를 받으면 rekian-library/formats/<id>/의 format.json → format_profile.json →
+  placeholder_schema.json 순서로 로드한 뒤 COM 생성에 들어갑니다.
+
   상세 지침은 SKILL.md를 참조하세요.
 
 
