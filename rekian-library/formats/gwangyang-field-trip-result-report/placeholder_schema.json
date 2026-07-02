@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "document_type": "document_format",
+  "fields": [
+    {
+      "key": "title",
+      "label": "제목",
+      "required": true,
+      "zone": "header"
+    },
+    {
+      "key": "body",
+      "label": "본문",
+      "required": true,
+      "zone": "body"
+    },
+    {
+      "key": "attachments",
+      "label": "붙임",
+      "required": false,
+      "zone": "body"
+    }
+  ],
+  "content_contract": {
+    "input_format": "json",
+    "writer": "hwp-com-writer",
+    "rule": "Fill values by semantic key. Preserve source layout objects and only replace visible text slots unless explicitly rebuilding."
+  }
+}

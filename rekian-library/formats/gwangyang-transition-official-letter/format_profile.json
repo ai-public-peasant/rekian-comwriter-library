@@ -1,0 +1,426 @@
+{
+  "schema_version": "0.1.0",
+  "format_id": "gwangyang-transition-official-letter",
+  "label": "샘플전환위원회 공문 서식",
+  "description": "샘플전환위원회 상단 기관명, 수신·경유·제목, 하단 결재·시행정보 표를 보존하는 공문 서식 프로필",
+  "generated_at": "2026-06-20T04:25:55Z",
+  "source_audit": {
+    "source_path": "<omitted-public-source-reference>",
+    "source_suffix": ".hwpx",
+    "source_size_bytes": 31403,
+    "source_sha256": "038e7fbf03adf16e6d1284063deb4cd586e9e3a50bd82f9ee48f1580c109ebe3",
+    "source_file_copied": false
+  },
+  "handoff": {
+    "reader": "hwpx-rekian",
+    "writer": "hwp-com-writer",
+    "load_order": [
+      "formats/<format-id>/format.json",
+      "formats/<format-id>/format_profile.json",
+      "formats/<format-id>/placeholder_schema.json"
+    ],
+    "speed_rule": "Use cached structure first. Re-open the raw reference only when the profile lacks a required slot or visual verification fails."
+  },
+  "document_type": "official_letter",
+  "structure": {
+    "package_type": "hwpx",
+    "section_count": 1,
+    "sections": [
+      {
+        "path": "Contents/section0.xml",
+        "paragraph_count": 69,
+        "run_count": 72,
+        "text_node_count": 32,
+        "non_empty_text_node_count": 23,
+        "table_count": 4,
+        "cell_count": 63,
+        "picture_count": 1,
+        "container_paragraph_count": 3
+      }
+    ],
+    "header": {
+      "charPr_count": 15,
+      "paraPr_count": 21,
+      "style_count": 21,
+      "borderFill_count": 5,
+      "fontface_count": 7,
+      "page_def_samples": [],
+      "charPr_samples": [
+        {
+          "id": "0",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "1"
+        },
+        {
+          "id": "1",
+          "height": "1200",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "2",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "3",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "4",
+          "height": "900",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "5",
+          "height": "950",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "6",
+          "height": "1200",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "7",
+          "height": "800",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "8",
+          "height": "800",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "9",
+          "height": "800",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        }
+      ],
+      "borderFill_samples": [
+        {
+          "id": "1",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "2",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "3",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "4",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "5",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        }
+      ]
+    },
+    "resources": {
+      "bindata_count": 1,
+      "bindata_names": [
+        "BinData/image1.gif"
+      ],
+      "preview_files": [
+        "Preview/PrvText.txt",
+        "Preview/PrvImage.png"
+      ]
+    },
+    "text": {
+      "non_empty_text_node_count": 23,
+      "first_label_like_nodes": [
+        "샘플전환위원회",
+        "수신",
+        "(경유)",
+        "제목",
+        "담당자",
+        "분과위원장",
+        "인수위원장",
+        "결재 2026.",
+        "시행",
+        "시행",
+        "전화번호",
+        "팩스번호",
+        "@korea.kr",
+        "비공개"
+      ]
+    }
+  },
+  "slots": [
+    {
+      "key": "organization_name",
+      "node_index": 0,
+      "label_hint": "샘플전환위원회",
+      "context_before": "",
+      "context_after": "수신"
+    },
+    {
+      "key": "recipient",
+      "node_index": 1,
+      "label_hint": "수신",
+      "context_before": "샘플전환위원회",
+      "context_after": "(경유)"
+    },
+    {
+      "key": "via",
+      "node_index": 2,
+      "label_hint": "(경유)",
+      "context_before": "수신",
+      "context_after": "제목"
+    },
+    {
+      "key": "subject",
+      "node_index": 3,
+      "label_hint": "제목",
+      "context_before": "(경유)",
+      "context_after": "담당자"
+    },
+    {
+      "key": "drafter",
+      "node_index": 4,
+      "label_hint": "담당자",
+      "context_before": "제목",
+      "context_after": "분과위원장"
+    },
+    {
+      "key": "division_chair",
+      "node_index": 5,
+      "label_hint": "분과위원장",
+      "context_before": "담당자",
+      "context_after": "인수위원장"
+    },
+    {
+      "key": "committee_chair",
+      "node_index": 6,
+      "label_hint": "인수위원장",
+      "context_before": "분과위원장",
+      "context_after": "결재 2026."
+    },
+    {
+      "key": "approval_date",
+      "node_index": 7,
+      "label_hint": "결재 2026.",
+      "context_before": "인수위원장",
+      "context_after": "협조자"
+    },
+    {
+      "key": "document_number",
+      "node_index": 9,
+      "label_hint": "시행",
+      "context_before": "협조자",
+      "context_after": "샘플전환위원회-"
+    },
+    {
+      "key": "issue_date",
+      "node_index": 9,
+      "label_hint": "시행",
+      "context_before": "협조자",
+      "context_after": "샘플전환위원회-"
+    },
+    {
+      "key": "phone",
+      "node_index": 16,
+      "label_hint": "전화번호",
+      "context_before": "공개용 샘플 주소",
+      "context_after": "061-798-"
+    },
+    {
+      "key": "fax",
+      "node_index": 18,
+      "label_hint": "팩스번호",
+      "context_before": "061-798-",
+      "context_after": "/"
+    },
+    {
+      "key": "email",
+      "node_index": 20,
+      "label_hint": "@korea.kr",
+      "context_before": "/",
+      "context_after": "/"
+    },
+    {
+      "key": "disclosure",
+      "node_index": 22,
+      "label_hint": "비공개",
+      "context_before": "/",
+      "context_after": ""
+    }
+  ],
+  "zone_map": {
+    "header": [
+      {
+        "key": "organization_name",
+        "node_index": 0,
+        "label_hint": "샘플전환위원회",
+        "context_before": "",
+        "context_after": "수신"
+      },
+      {
+        "key": "recipient",
+        "node_index": 1,
+        "label_hint": "수신",
+        "context_before": "샘플전환위원회",
+        "context_after": "(경유)"
+      },
+      {
+        "key": "via",
+        "node_index": 2,
+        "label_hint": "(경유)",
+        "context_before": "수신",
+        "context_after": "제목"
+      },
+      {
+        "key": "subject",
+        "node_index": 3,
+        "label_hint": "제목",
+        "context_before": "(경유)",
+        "context_after": "담당자"
+      }
+    ],
+    "body": [],
+    "approval": [
+      {
+        "key": "drafter",
+        "node_index": 4,
+        "label_hint": "담당자",
+        "context_before": "제목",
+        "context_after": "분과위원장"
+      },
+      {
+        "key": "division_chair",
+        "node_index": 5,
+        "label_hint": "분과위원장",
+        "context_before": "담당자",
+        "context_after": "인수위원장"
+      },
+      {
+        "key": "committee_chair",
+        "node_index": 6,
+        "label_hint": "인수위원장",
+        "context_before": "분과위원장",
+        "context_after": "결재 2026."
+      },
+      {
+        "key": "approval_date",
+        "node_index": 7,
+        "label_hint": "결재 2026.",
+        "context_before": "인수위원장",
+        "context_after": "협조자"
+      }
+    ],
+    "footer": [
+      {
+        "key": "document_number",
+        "node_index": 9,
+        "label_hint": "시행",
+        "context_before": "협조자",
+        "context_after": "샘플전환위원회-"
+      },
+      {
+        "key": "issue_date",
+        "node_index": 9,
+        "label_hint": "시행",
+        "context_before": "협조자",
+        "context_after": "샘플전환위원회-"
+      },
+      {
+        "key": "phone",
+        "node_index": 16,
+        "label_hint": "전화번호",
+        "context_before": "공개용 샘플 주소",
+        "context_after": "061-798-"
+      },
+      {
+        "key": "fax",
+        "node_index": 18,
+        "label_hint": "팩스번호",
+        "context_before": "061-798-",
+        "context_after": "/"
+      },
+      {
+        "key": "email",
+        "node_index": 20,
+        "label_hint": "@korea.kr",
+        "context_before": "/",
+        "context_after": "/"
+      },
+      {
+        "key": "disclosure",
+        "node_index": 22,
+        "label_hint": "비공개",
+        "context_before": "/",
+        "context_after": ""
+      }
+    ]
+  },
+  "fingerprint": "bfce48f3b0c299f385d59a05a643cba1f111f66c8ddab5915f659647915e763a"
+}

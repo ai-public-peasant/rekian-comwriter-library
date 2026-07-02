@@ -1,0 +1,323 @@
+{
+  "schema_version": "0.1.0",
+  "format_id": "gwangyang-field-trip-result-report",
+  "label": "광양시 선진지 견학 결과보고서",
+  "description": "표지형 개요, 사례별 정책 검토 본문, 도식·이미지, 붙임 표를 포함한 선진지 견학 결과보고서 서식 프로필",
+  "generated_at": "2026-06-21T00:45:11Z",
+  "source_audit": {
+    "source_path": "<omitted-public-source-reference>",
+    "source_suffix": ".hwpx",
+    "source_size_bytes": 3818070,
+    "source_sha256": "ef1f97e5d7fc844df86d95eb22eccd2e6681b52a6060ed2aec8f5ace91946e24",
+    "source_file_copied": false
+  },
+  "handoff": {
+    "reader": "hwpx-rekian",
+    "writer": "hwp-com-writer",
+    "load_order": [
+      "formats/<format-id>/format.json",
+      "formats/<format-id>/format_profile.json",
+      "formats/<format-id>/placeholder_schema.json"
+    ],
+    "speed_rule": "Use cached structure first. Re-open the raw reference only when the profile lacks a required slot or visual verification fails."
+  },
+  "document_type": "document_format",
+  "structure": {
+    "package_type": "hwpx",
+    "section_count": 1,
+    "sections": [
+      {
+        "path": "Contents/section0.xml",
+        "paragraph_count": 272,
+        "run_count": 376,
+        "text_node_count": 311,
+        "non_empty_text_node_count": 278,
+        "table_count": 21,
+        "cell_count": 122,
+        "picture_count": 3,
+        "container_paragraph_count": 21
+      }
+    ],
+    "header": {
+      "charPr_count": 82,
+      "paraPr_count": 68,
+      "style_count": 21,
+      "borderFill_count": 55,
+      "fontface_count": 7,
+      "page_def_samples": [],
+      "charPr_samples": [
+        {
+          "id": "0",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "1",
+          "height": "900",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "2",
+          "height": "900",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "3",
+          "height": "900",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "4",
+          "height": "1600",
+          "textColor": "#2E74B5",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "5",
+          "height": "1100",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "6",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "7",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "2"
+        },
+        {
+          "id": "8",
+          "height": "1000",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "1"
+        },
+        {
+          "id": "9",
+          "height": "2600",
+          "textColor": "#000000",
+          "shadeColor": "none",
+          "useFontSpace": "0",
+          "useKerning": "0",
+          "symMark": "NONE",
+          "borderFillIDRef": "3"
+        }
+      ],
+      "borderFill_samples": [
+        {
+          "id": "1",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "2",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "3",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "4",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "5",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "6",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "7",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "8",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "9",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        },
+        {
+          "id": "10",
+          "threeD": "0",
+          "shadow": "0",
+          "centerLine": "NONE",
+          "breakCellSeparateLine": "0"
+        }
+      ]
+    },
+    "resources": {
+      "bindata_count": 14,
+      "bindata_names": [
+        "BinData/image6.jpg",
+        "BinData/image10.PNG",
+        "BinData/image12.jpg",
+        "BinData/image11.PNG",
+        "BinData/image8.PNG",
+        "BinData/image14.PNG",
+        "BinData/image9.PNG",
+        "BinData/image13.PNG",
+        "BinData/image1.PNG",
+        "BinData/image2.PNG",
+        "BinData/image3.jpg",
+        "BinData/image4.jpg",
+        "BinData/image5.bmp",
+        "BinData/image7.png"
+      ],
+      "preview_files": [
+        "Preview/PrvText.txt",
+        "Preview/PrvImage.png"
+      ]
+    },
+    "text": {
+      "non_empty_text_node_count": 278,
+      "first_label_like_nodes": [
+        "• 캐릭터 활용사업 개발 및 시행",
+        "• 캐릭터 활용사업 개발 및 시행",
+        "※ (붙임)세부사업 예시안",
+        "붙임"
+      ]
+    }
+  },
+  "slots": [
+    {
+      "key": "document_number",
+      "node_index": 192,
+      "label_hint": "• 캐릭터 활용사업 개발 및 시행",
+      "context_before": "(전 부서)",
+      "context_after": "- 캐릭터를 활용한 공공시설물"
+    },
+    {
+      "key": "issue_date",
+      "node_index": 192,
+      "label_hint": "• 캐릭터 활용사업 개발 및 시행",
+      "context_before": "(전 부서)",
+      "context_after": "- 캐릭터를 활용한 공공시설물"
+    },
+    {
+      "key": "attachments",
+      "node_index": 224,
+      "label_hint": "※ (붙임)세부사업 예시안",
+      "context_before": "캐릭터 활용 세부사업 발굴 및 추진",
+      "context_after": "-"
+    },
+    {
+      "key": "attachments",
+      "node_index": 236,
+      "label_hint": "붙임",
+      "context_before": "⇒ 총괄부서의 사업계획 검토, 디자인 검수 및 사용승인",
+      "context_after": "매돌이 캐릭터 활용 세부사업 예시안"
+    }
+  ],
+  "zone_map": {
+    "header": [],
+    "body": [
+      {
+        "key": "attachments",
+        "node_index": 224,
+        "label_hint": "※ (붙임)세부사업 예시안",
+        "context_before": "캐릭터 활용 세부사업 발굴 및 추진",
+        "context_after": "-"
+      },
+      {
+        "key": "attachments",
+        "node_index": 236,
+        "label_hint": "붙임",
+        "context_before": "⇒ 총괄부서의 사업계획 검토, 디자인 검수 및 사용승인",
+        "context_after": "매돌이 캐릭터 활용 세부사업 예시안"
+      }
+    ],
+    "approval": [],
+    "footer": [
+      {
+        "key": "document_number",
+        "node_index": 192,
+        "label_hint": "• 캐릭터 활용사업 개발 및 시행",
+        "context_before": "(전 부서)",
+        "context_after": "- 캐릭터를 활용한 공공시설물"
+      },
+      {
+        "key": "issue_date",
+        "node_index": 192,
+        "label_hint": "• 캐릭터 활용사업 개발 및 시행",
+        "context_before": "(전 부서)",
+        "context_after": "- 캐릭터를 활용한 공공시설물"
+      }
+    ]
+  },
+  "fingerprint": "0455d969b53e2f7ccf1882c5b8e704b25ea32a520fb8baf32d7c0e61201f3cf0"
+}

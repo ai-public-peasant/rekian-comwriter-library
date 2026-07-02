@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.pyright/
+.venv/
+venv/
+
+# Generated documents and local renders
+*.hwp
+*.hwpx
+*.pdf
+outputs/
+rendered_pages/
+analysis_outputs/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets and local env
+.env
+.env.*
+!.env.example

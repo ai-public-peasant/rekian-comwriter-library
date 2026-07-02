@@ -1,0 +1,119 @@
+{
+  "schema_version": "0.1.0",
+  "document_type": "official_letter",
+  "fields": [
+    {
+      "key": "organization_name",
+      "label": "기관명",
+      "required": true,
+      "zone": "header"
+    },
+    {
+      "key": "recipient",
+      "label": "수신",
+      "required": true,
+      "zone": "header"
+    },
+    {
+      "key": "via",
+      "label": "경유",
+      "required": false,
+      "zone": "header"
+    },
+    {
+      "key": "subject",
+      "label": "제목",
+      "required": true,
+      "zone": "header"
+    },
+    {
+      "key": "body",
+      "label": "본문",
+      "required": true,
+      "zone": "body"
+    },
+    {
+      "key": "attachments",
+      "label": "붙임",
+      "required": false,
+      "zone": "body"
+    },
+    {
+      "key": "drafter",
+      "label": "담당자",
+      "required": false,
+      "zone": "approval"
+    },
+    {
+      "key": "division_chair",
+      "label": "분과위원장",
+      "required": false,
+      "zone": "approval"
+    },
+    {
+      "key": "committee_chair",
+      "label": "인수위원장",
+      "required": false,
+      "zone": "approval"
+    },
+    {
+      "key": "approval_date",
+      "label": "결재일자",
+      "required": false,
+      "zone": "approval"
+    },
+    {
+      "key": "document_number",
+      "label": "시행번호",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "issue_date",
+      "label": "시행일자",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "postal_code",
+      "label": "우편번호",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "address",
+      "label": "주소",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "phone",
+      "label": "전화번호",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "fax",
+      "label": "팩스번호",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "email",
+      "label": "이메일",
+      "required": false,
+      "zone": "footer"
+    },
+    {
+      "key": "disclosure",
+      "label": "공개구분",
+      "required": false,
+      "zone": "footer"
+    }
+  ],
+  "content_contract": {
+    "input_format": "json",
+    "writer": "hwp-com-writer",
+    "rule": "Fill values by semantic key. Preserve source layout objects and only replace visible text slots unless explicitly rebuilding."
+  }
+}

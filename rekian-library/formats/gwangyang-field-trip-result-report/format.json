@@ -1,0 +1,20 @@
+{
+  "id": "gwangyang-field-trip-result-report",
+  "label": "광양시 선진지 견학 결과보고서",
+  "description": "표지형 개요, 사례별 정책 검토 본문, 도식·이미지, 붙임 표를 포함한 선진지 견학 결과보고서 서식 프로필",
+  "status": "profile-cache",
+  "sanitized_source": true,
+  "document_type": "document_format",
+  "profile": "format_profile.json",
+  "placeholder_schema": "placeholder_schema.json",
+  "workflow": {
+    "reader": "hwpx-rekian",
+    "writer": "hwp-com-writer",
+    "mode": "profile_first_then_com"
+  },
+  "notes": [
+    "This asset stores read format information, not the original source document.",
+    "Use format_profile.json for structure and slot detection before re-reading a raw reference.",
+    "Use placeholder_schema.json as the handoff contract for COM generation."
+  ]
+}

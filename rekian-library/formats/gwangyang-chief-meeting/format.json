@@ -1,0 +1,309 @@
+{
+  "id": "gwangyang-chief-meeting",
+  "label": "광양시 직속실회의",
+  "description": "광양시 직속실회의 1페이지 보고 메모 형식. 부서 표기, 제목부, 개요, 세부내용, 핵심 쟁점, 향후 대응방향 흐름을 유지한다.",
+  "unpacked_dir": "formats/gwangyang-chief-meeting/unpacked",
+  "paths": {
+    "section_xml": "Contents/section0.xml",
+    "content_hpf": "Contents/content.hpf",
+    "preview_text": "Preview/PrvText.txt"
+  },
+  "metadata": {
+    "title_from": "title.main",
+    "creator": "rekian-library"
+  },
+  "non_empty_text_node_count": 85,
+  "preview_bindings": [
+    {
+      "from": "title.main"
+    },
+    {
+      "from": "title.sub"
+    },
+    {
+      "literal": ""
+    },
+    {
+      "from": "issues.heading"
+    },
+    {
+      "from": "issues.items[0].title"
+    },
+    {
+      "from": "issues.items[1].title"
+    },
+    {
+      "from": "issues.items[2].title"
+    },
+    {
+      "literal": ""
+    },
+    {
+      "from": "responses.heading"
+    },
+    {
+      "from": "responses.items[0].title"
+    },
+    {
+      "from": "responses.items[1].title"
+    }
+  ],
+  "text_bindings": [
+    {
+      "from": "meta.department"
+    },
+    {
+      "from": "meta.badge"
+    },
+    {
+      "from": "title.main"
+    },
+    {
+      "from": "title.sub"
+    },
+    {
+      "from": "overview.heading"
+    },
+    {
+      "from": "overview.items[0].prefix1"
+    },
+    {
+      "from": "overview.items[0].name"
+    },
+    {
+      "from": "overview.items[0].note"
+    },
+    {
+      "from": "overview.items[1].text"
+    },
+    {
+      "from": "overview.items[2].bullet"
+    },
+    {
+      "from": "overview.items[2].label"
+    },
+    {
+      "from": "overview.items[2].body"
+    },
+    {
+      "from": "overview.items[3].bullet"
+    },
+    {
+      "from": "overview.items[3].label"
+    },
+    {
+      "from": "overview.items[3].body"
+    },
+    {
+      "from": "overview.items[4].bullet"
+    },
+    {
+      "from": "overview.items[4].label"
+    },
+    {
+      "from": "overview.items[4].body"
+    },
+    {
+      "from": "detail.heading"
+    },
+    {
+      "from": "detail.system_block.heading"
+    },
+    {
+      "from": "detail.system_block.table_headers[0]"
+    },
+    {
+      "from": "detail.system_block.table_headers[1]"
+    },
+    {
+      "from": "detail.system_block.table_headers[2]"
+    },
+    {
+      "from": "detail.system_block.table_headers[3]"
+    },
+    {
+      "from": "detail.system_block.table_headers[4]"
+    },
+    {
+      "from": "detail.system_block.table_headers[5]"
+    },
+    {
+      "from": "detail.system_block.table_cells[0]"
+    },
+    {
+      "from": "detail.system_block.table_cells[1]"
+    },
+    {
+      "from": "detail.system_block.table_cells[2]"
+    },
+    {
+      "from": "detail.system_block.table_cells[3]"
+    },
+    {
+      "from": "detail.system_block.table_cells[4]"
+    },
+    {
+      "from": "detail.system_block.table_cells[5]"
+    },
+    {
+      "from": "detail.system_block.table_cells[6]"
+    },
+    {
+      "from": "detail.system_block.table_cells[7]"
+    },
+    {
+      "from": "detail.system_block.table_cells[8]"
+    },
+    {
+      "from": "detail.system_block.table_cells[9]"
+    },
+    {
+      "from": "detail.system_block.table_cells[10]"
+    },
+    {
+      "from": "detail.system_block.table_cells[11]"
+    },
+    {
+      "from": "detail.system_block.table_cells[12]"
+    },
+    {
+      "from": "detail.system_block.table_cells[13]"
+    },
+    {
+      "from": "detail.system_block.table_cells[14]"
+    },
+    {
+      "from": "detail.system_block.table_cells[15]"
+    },
+    {
+      "from": "detail.system_block.table_cells[16]"
+    },
+    {
+      "from": "detail.system_block.table_cells[17]"
+    },
+    {
+      "from": "detail.system_block.table_cells[18]"
+    },
+    {
+      "from": "detail.system_block.table_cells[19]"
+    },
+    {
+      "from": "detail.system_block.table_cells[20]"
+    },
+    {
+      "from": "detail.system_block.table_cells[21]"
+    },
+    {
+      "from": "detail.effects_block.heading"
+    },
+    {
+      "from": "detail.effects_block.body"
+    },
+    {
+      "from": "detail.cautions_block.heading_prefix"
+    },
+    {
+      "from": "detail.cautions_block.heading"
+    },
+    {
+      "from": "detail.cautions_block.paren_open"
+    },
+    {
+      "from": "detail.cautions_block.topic"
+    },
+    {
+      "from": "detail.cautions_block.paren_mid"
+    },
+    {
+      "from": "detail.cautions_block.body"
+    },
+    {
+      "from": "detail.cautions_block.tail"
+    },
+    {
+      "from": "issues.heading"
+    },
+    {
+      "from": "issues.items[0].bullet"
+    },
+    {
+      "from": "issues.items[0].title"
+    },
+    {
+      "from": "issues.items[0].body"
+    },
+    {
+      "from": "issues.items[0].sub"
+    },
+    {
+      "from": "issues.items[1].bullet"
+    },
+    {
+      "from": "issues.items[1].title"
+    },
+    {
+      "from": "issues.items[1].body"
+    },
+    {
+      "from": "issues.items[1].sub"
+    },
+    {
+      "from": "issues.items[2].bullet"
+    },
+    {
+      "from": "issues.items[2].title"
+    },
+    {
+      "from": "issues.items[2].body"
+    },
+    {
+      "from": "issues.items[2].sub_bullet"
+    },
+    {
+      "from": "issues.items[2].sub_part1"
+    },
+    {
+      "from": "issues.items[2].sub_part2"
+    },
+    {
+      "from": "issues.items[2].sub_part3"
+    },
+    {
+      "from": "responses.heading"
+    },
+    {
+      "from": "responses.items[0].bullet"
+    },
+    {
+      "from": "responses.items[0].title"
+    },
+    {
+      "from": "responses.items[0].body_part1"
+    },
+    {
+      "from": "responses.items[0].body_part2"
+    },
+    {
+      "from": "responses.items[0].body_part3"
+    },
+    {
+      "from": "responses.items[0].body_part4"
+    },
+    {
+      "from": "responses.items[1].bullet"
+    },
+    {
+      "from": "responses.items[1].title"
+    },
+    {
+      "from": "responses.items[1].body_part1"
+    },
+    {
+      "from": "responses.items[1].body_part2"
+    },
+    {
+      "from": "responses.items[1].body_part3"
+    }
+  ],
+  "sanitized_source": true
+}

@@ -1,0 +1,20 @@
+{
+  "id": "gwangyang-transition-official-letter",
+  "label": "샘플전환위원회 공문 서식",
+  "description": "샘플전환위원회 상단 기관명, 수신·경유·제목, 하단 결재·시행정보 표를 보존하는 공문 서식 프로필",
+  "status": "profile-cache",
+  "sanitized_source": true,
+  "document_type": "official_letter",
+  "profile": "format_profile.json",
+  "placeholder_schema": "placeholder_schema.json",
+  "workflow": {
+    "reader": "hwpx-rekian",
+    "writer": "hwp-com-writer",
+    "mode": "profile_first_then_com"
+  },
+  "notes": [
+    "This asset stores read format information, not the original source document.",
+    "Use format_profile.json for structure and slot detection before re-reading a raw reference.",
+    "Use placeholder_schema.json as the handoff contract for COM generation."
+  ]
+}

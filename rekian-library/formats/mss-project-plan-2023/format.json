@@ -1,0 +1,39 @@
+{
+  "id": "mss-project-plan-2023",
+  "label": "MSS project plan 2023",
+  "description": "Sanitized large project-plan skeleton based on the Ministry of SMEs and Startups style.",
+  "status": "candidate",
+  "sanitized_source": true,
+  "unpacked_dir": "formats/mss-project-plan-2023/unpacked",
+  "paths": {
+    "section_xml": "Contents/section0.xml",
+    "content_hpf": "Contents/content.hpf",
+    "preview_text": "Preview/PrvText.txt"
+  },
+  "organization": {
+    "official_english": "Ministry of SMEs and Startups",
+    "abbreviation": "MSS",
+    "korean_name": "중소벤처기업부",
+    "korean_short": "중기부"
+  },
+  "aliases": [
+    "mss",
+    "MSS",
+    "Ministry of SMEs and Startups",
+    "중소벤처기업부",
+    "중기부",
+    "중기부 양식",
+    "중소벤처기업부 양식"
+  ],
+  "structure": {
+    "non_empty_text_node_count": 556,
+    "paragraph_count": 631,
+    "table_count": 24
+  },
+  "notes": [
+    "Do not store the original .hwpx in this repository.",
+    "Do not store the original Preview/PrvImage.png in this repository.",
+    "Keep section0.xml body text as placeholders only.",
+    "This format will likely need a section-aware composer or block mapping workflow."
+  ]
+}

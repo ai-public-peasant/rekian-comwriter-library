@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0.0",
+  "id": "regional-case-photo-summary",
+  "label": "타지역 사례 사진형 검토표",
+  "aliases": ["사례검토표", "타지역 우수사례표", "벤치마킹 사례표", "사진형 사례요약표"],
+  "status": "active",
+  "created_at": "2026-06-22",
+  "updated_at": "2026-06-22",
+  "sanitized_source": true,
+  "description": "사진 칸 1개와 사례·현황·특징·우리시 적용방향을 함께 배치하는 붙임형 사례검토 표 프로필.",
+  "use_when": [
+    "타지역 사례나 우수시책을 붙임으로 정리할 때",
+    "선진지 견학, 벤치마킹, 신규사업 검토에서 사례별 적용방향을 보여줄 때",
+    "본문에는 요약표를 두고 붙임에는 사례별 상세 검토를 넣을 때"
+  ],
+  "avoid_when": [
+    "법령 조문이나 부서 의견처럼 사진이 필요 없는 검토표",
+    "정량 지표가 많아 여러 사례를 한 화면에서 비교해야 하는 경우",
+    "사례별 사진보다 후보지 평가점수나 예산 산출이 핵심인 경우"
+  ],
+  "document_type_fit": {
+    "primary": ["field_trip_benchmark_report", "status_summary"],
+    "secondary": ["basic_plan", "review_report", "brand_strategy_review"]
+  },
+  "semantic_slots": [
+    {
+      "id": "photo_slot",
+      "label": "사진",
+      "required": true,
+      "description": "사례 전경, 시설 내부, 홍보물, 위치도 등 대표 이미지를 넣는 칸. 이미지가 없으면 자료사진 삽입 문구를 둔다."
+    },
+    {
+      "id": "case_name",
+      "label": "사례",
+      "required": true,
+      "description": "기관명, 시설명, 사업명을 한 줄로 적는다."
+    },
+    {
+      "id": "status",
+      "label": "현황",
+      "required": true,
+      "description": "개소일, 위치, 규모, 사업비, 운영주체, 주요 시설 등 객관 현황."
+    },
+    {
+      "id": "features",
+      "label": "특징",
+      "required": true,
+      "description": "다른 사례와 구별되는 운영방식, 제도, 공간 구성, 성과, 민원 대응 포인트."
+    },
+    {
+      "id": "local_application",
+      "label": "우리시 적용방향",
+      "required": true,
+      "description": "해당 사례를 우리 지역 정책·공간·예산·운영체계에 어떻게 변환할지 정리."
+    }
+  ],
+  "layout": {
+    "type": "photo_left_summary_right",
+    "table_width_hwp_unit": 47904,
+    "columns": [
+      {
+        "id": "photo",
+        "label": "사진",
+        "width_ratio": 0.26,
+        "preferred_width_hwp_unit": 12600,
+        "content": ["photo_slot", "photo_caption", "placeholder_text"]
+      },
+      {
+        "id": "summary",
+        "label": "사례 검토",
+        "width_ratio": 0.74,
+        "preferred_width_hwp_unit": 35304,
+        "content_order": ["case_name", "status", "features", "local_application"],
+        "label_style": "inline_label_pipe"
+      }
+    ],
+    "rows": [
+      {
+        "id": "single_case_block",
+        "height_hwp_unit": 10300,
+        "purpose": "One case per table block. Multiple blocks may flow across pages."
+      }
+    ],
+    "recommended_text_pattern": [
+      "사례 | {case_name}",
+      "현황 | {status}",
+      "특징 | {features}",
+      "우리시 적용 | {local_application}"
+    ]
+  },
+  "hwp_generation_notes": {
+    "anchor_rule": "In HWPX, table XML must be inserted inside a paragraph run, not directly under section0.xml.",
+    "anchor_shape": "hp:p > hp:run > hp:tbl",
+    "verified_issues": [
+      {
+        "issue": "Tables inserted directly under hs:sec were not rendered by Hancom; only internal text flowed into the document.",
+        "fix": "Wrap the table with an anchor paragraph and run before inserting."
+      },
+      {
+        "issue": "rowSpan-based photo cells are fragile across generated HWPX output.",
+        "fix": "Use a 1-row, 2-column table: left photo cell, right summary cell with inline labels."
+      }
+    ],
+    "recommended_constraints": {
+      "avoid_row_span": true,
+      "avoid_nested_tables": true,
+      "one_case_per_table": true,
+      "render_verify_required": true
+    }
+  },
+  "style_guidance": {
+    "photo_cell": "Keep large enough for one representative image. If no image is inserted yet, use short placeholder text only.",
+    "summary_cell": "Use compact paragraphs with inline labels. Do not over-split into many narrow columns.",
+    "page_flow": "Allow one to two case blocks per page. Avoid leaving a standalone case title separated from its table.",
+    "tone": "Use factual status first, then interpretation, then local application."
+  },
+  "content_quality_rules": [
+    "Do not mechanically copy public-relations wording from the source.",
+    "Separate objective status from analyst interpretation.",
+    "The local application row must say what changes in the target city, not merely praise the source case.",
+    "If a figure is uncertain, omit it or mark it for confirmation rather than fabricating detail."
+  ],
+  "provenance": {
+    "derived_from_project": "광양시 유기동물 보호입양체계 개선방안",
+    "derived_from_task": "붙임 타지역 사례 검토 표 생성",
+    "verified_output_summary": "7-page PDF render verified; appendix case tables displayed on pages 5-7 without clipping.",
+    "local_reference_paths": {
+      "builder_script": "<omitted-local-reference>",
+      "verified_pdf": "<omitted-local-reference>",
+      "render_contact_sheet": "<omitted-local-reference>"
+    }
+  }
+}
