@@ -49,8 +49,22 @@ Do not use this skill for generic `.hwpx` inspection or one-off document generat
 - `scripts/text_extract.py`: 원문 내용 추출
 - `scripts/office/unpack.py`: XML 단위로 레이아웃 확인
 - `scripts/build_hwpx.py`: 재구성한 header/section으로 새 파일 조립
+- `scripts/table_rows.py`: 표 구조 수술 — 행 추가(CLI: `--table-index --after-row --count --set COL=TEXT`), 열 추가(`insert_cols_in_table`), 셀 병합(`merge_cells_in_table`). 병합 자동 확장·주소 재계산·그리드 정합 내장. 손으로 `<hp:tr>`/`cellAddr`을 만지지 말고 반드시 이걸 쓸 것
 - `templates/`: 기본 골격 출발점
 - `examples/`: 샘플 흐름 참고
+
+## Structural Ops Triggers (표 구조 수술이 필요한 신호)
+
+내용을 채우다가 아래 상황을 만나면 "텍스트 치환"을 멈추고 `table_rows.py`로 전환한다.
+이 판단을 놓치면 내용을 욱여넣거나(셀 하나에 여러 건) 항목을 버리게 된다 — 둘 다 사고다.
+
+- **항목 수 > 서식의 빈 행 수**: 사업 7건인데 서식 행이 3개 → 행 추가. 절대 한 셀에 줄바꿈으로 몰아넣지 않는다
+- **항목 수 < 빈 행 수**: 남는 빈 행은 그대로 두는 게 기본. 삭제 요청이 명시된 경우만 축소
+- **새 속성 요구**: "담당부서도 넣어줘"처럼 서식에 없는 열이 필요 → 열 추가(기준 열 분할 방식이라 표 폭 유지됨)
+- **같은 값 반복**: 연속 행에 동일 값(같은 부서, 같은 기간)이 들어가면 세로 병합 후보 — 단, 레퍼런스 서식이 병합을 쓰는 스타일일 때만 (원본이 반복 표기 스타일이면 따라간다)
+- **레퍼런스와 대상의 격자 불일치**: 재기안 시 원본 표가 5×9인데 새 내용 구조가 6×9를 요구 → 붙이기 전에 표를 먼저 수술
+
+수술 후에는 반드시: ① 그리드 정합(각 행의 colSpan 합 = colCnt) 확인 ② validate.py ③ 가능하면 한컴 COM 열기까지. 세 단계가 모두 통과해야 완료로 본다.
 
 ## COM Backend
 
